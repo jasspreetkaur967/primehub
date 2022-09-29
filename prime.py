@@ -1,18 +1,18 @@
 # Program to check if a number is prime or not
 import sys
-num = int(sys.argv[1])
-num = ("Enter a number: ")
+num1 = (sys.argv[1])
+num2 = (sys.argv[2])
+num1 = input("Input a number: ")
+num2 = input("Input another number: ")
 
-# If number is greater than 1
-if num > 1:
-   # Check if factor exist  
-   for i in range(2,num):
-       if (num % i) == 0:
-           print(num,"is not a prime number")
-           break
-   else:
-       print(num,"is a prime number")
-       
-# Else if the input number is less than or equal to 1
-else:
-     print(num,"is not a prime number")
+
+for x in range(num1,num2):
+    prime = True
+    for i in range(2,x):
+        if (x%i==0):
+            prime = False
+    if prime == True:
+       print x
+
+print "Done"
+

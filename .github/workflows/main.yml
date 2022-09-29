@@ -15,11 +15,14 @@ on:
     inputs: 
         number1: 
           description: 'Enter first number:'
-          required: true 
-        
+          required: true
+        number2:
+          description: 'Enter second number:'
+          required: true
 
 env:
-  num : ${{github.event.inputs.number1}}
+  num1 : ${{github.event.inputs.number1}}
+  num2 : ${{github.event.inputs.number2}}
   
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -35,7 +38,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run python script for checking prime nos
-        run: python prime.py $num
+        run: python prime.py $num1 $num2
 
       # Runs a set of commands using the runners shell
 #       - name: Run a multi-line script

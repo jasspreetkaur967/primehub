@@ -12,7 +12,7 @@ for x in range(num1,num2):
         if (x%i==0):
             prime = False
     if prime == True:
-       print x
+       print( x)
 
-print "Done"
+print("Done")
 

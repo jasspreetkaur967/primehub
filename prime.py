@@ -2,8 +2,8 @@
 import sys
 num1 = (sys.argv[1])
 num2 = (sys.argv[2])
-num1 = input("Input a number: ")
-num2 = input("Input another number: ")
+num1 = ("Input a number: ")
+num2 = ("Input another number: ")
 
 
 for x in range(num1,num2):

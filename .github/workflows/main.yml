@@ -19,7 +19,7 @@ on:
         
 
 env:
-  num1 : ${{github.event.inputs.number1}}
+  num : ${{github.event.inputs.number1}}
   
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -35,7 +35,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run python script for checking prime nos
-        run: python prime.py $num1 
+        run: python prime.py $num
 
       # Runs a set of commands using the runners shell
 #       - name: Run a multi-line script

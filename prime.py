@@ -1,5 +1,6 @@
 # Program to check if a number is prime or not
-
+import sys
+num = int(sys.argv[1])
 num = int(input("Enter a number: "))
 
 # If number is greater than 1
